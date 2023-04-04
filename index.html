@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Nimrodel Pub Restaurant</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-glass">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="https://github.com/darikHarian/ecamp-m2-sesion4-evaluation/" target="_blank"><img id="nav-logo" src="./assets/img/logo.png" alt="Logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        <!-- <a href="https://github.com/darikHarian/ecamp-m2-sesion4-evaluation/" target="_blank"><img src="./assets/img/logo.png" alt="Logo Nimrodel"></a>
+        <ul>
+            <li>nuestros productos</li>
+            <li>sobre nosotros</li>
+            <li><a href="#communicate">Comuniquemonos</a></li>
+            <li><a href="#booking">Reserva</a></li>
+        </ul> -->
+    </header>
+
+    <main>
+        <h1>Nimrodel Pub Restaurant</h1>
+        <h3>Destacados de la semana</h3>
+        <section id="cards">
+            <div class="card">
+                <img src="./assets/img/bebidas.jpg" alt="Gaseosas">
+                <h5>GASEOSAS</h5>
+                <p>
+                    Lorem ipsum,andae optio ea explicabo non voluptatum eaque.
+                </p>
+            </div>
+            <div class="card">
+                <img src="./assets/img/tablas.jpg" alt="Tablas">
+                <h5>TABLAS</h5>
+                <p>
+                    Lorem ipsum,andae optio ea explicabo non voluptatum eaque.
+                </p>
+            </div>
+            <div class="card">
+                <img src="./assets/img/shop.jpeg" alt="Cervezas">
+                <h5>SHOP CERVEZA</h5>
+                <p>
+                    Lorem ipsum,andae optio ea explicabo non voluptatum eaque.
+                </p>
+            </div>
+        </section>
+
+        <section id="forms">
+            <div id="communicate">           
+                <form method="POST" action="redirect.html">
+                    <h2>Comuniquemonos</h2>
+                    <p>
+                        <label for="cname">Nombre</label>
+                        <input type="text" name="cname" id="cname" size="30" placeholder="Maria Vargas" required>
+                    </p>
+                    <p>
+                        <label for="cemail">Correo</label>
+                        <input type="email" name="cemail" id="cemail" size="31" placeholder="mariavargas@correo.com" required>
+                    </p>
+                    <p>
+                        <label for="cphone">Teléfono</label>
+                        <input type="tel" name="cphone" id="cphone" placeholder="951236874" required size="29">
+                    </p>
+                    <p>
+                        <label for="csubject">Motivo</label>
+                        <input type="text" name="csubject" id="csubject" size="30" required>
+                    </p>
+                    <p>
+                        <textarea name="ctextarea" id="ctextarea" cols="30" rows="10" required></textarea>
+                    </p>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+    
+            <div id="booking">   
+                <form method="POST" action="redirect.html">
+                    <h2>Reserva</h2>
+                    <p>
+                        <label for="rname">Nombre</label>
+                        <input type="text" name="rname" id="rname" size="29" placeholder="xxx xxxxx" required>
+                    </p>
+                    <p>
+                        <label for="remail">Correo</label>
+                        <input type="email" name="remail" id="remail" size="30" placeholder="xxx@xxx.xx" required>
+                    </p>
+                    <p>
+                        <label for="rtel">Teléfono</label>
+                        <input type="tel" name="rtel" id="rtel" placeholder="xxxxxxxxx" size="28" required>
+                    </p>
+                    <p>
+                        <label for="rdate">Fecha</label>
+                        <input type="date" name="rdate" id="rdate" required>
+                    </p>
+                    <p>
+                        <label for="rtime">Hora</label>
+                        <input type="time" name="rtime" id="rtime" required>
+                    </p>
+                    <p>
+                        <label for="rassistants">Cantidad de Asistentes</label>
+                        <input type="number" name="rassistants" id="rassistants" required>
+                    </p>
+                    <button type="submit">Reservar</button>
+                </form>
+            </div>
+        </section>        
+    </main>
+
+    <footer>
+        <p>
+            Todos los derechos reservados <span class="bi bi-r-circle"></span>
+        </p> 
+    </footer>
+</body>
+</html>
