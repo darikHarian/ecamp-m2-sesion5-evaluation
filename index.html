@@ -16,77 +16,66 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-glass">
             <div class="container-fluid">
-              <a class="navbar-brand" href="https://github.com/darikHarian/ecamp-m2-sesion4-evaluation/" target="_blank"><img id="nav-logo" src="./assets/img/logo.png" alt="Logo"></a>
+              <a class="navbar-brand" href="https://github.com/darikHarian/ecamp-m2-sesion5-evaluation/" target="_blank"><img id="nav-logo" src="./assets/img/logo.png" alt="Logo"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="#">Nuestros productos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
+                    <a class="nav-link" href="#">Sobre nosotros</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
+                    <a class="nav-link" href="#communicate">Comuniquémonos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#booking">Reserva</a>
                   </li>
                 </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
               </div>
             </div>
           </nav>
-        <!-- <a href="https://github.com/darikHarian/ecamp-m2-sesion4-evaluation/" target="_blank"><img src="./assets/img/logo.png" alt="Logo Nimrodel"></a>
-        <ul>
-            <li>nuestros productos</li>
-            <li>sobre nosotros</li>
-            <li><a href="#communicate">Comuniquemonos</a></li>
-            <li><a href="#booking">Reserva</a></li>
-        </ul> -->
     </header>
 
-    <main>
-        <h1>Nimrodel Pub Restaurant</h1>
-        <h3>Destacados de la semana</h3>
-        <section id="cards">
+    <main class="pt-2 text-center">
+        <h1 class="display-6 text-secondary fw-normal">Nimrodel Pub Restaurant</h1>
+        <h3 class="text-decoration-overline pt-5">Destacados de la semana</h3>
+
+        <section id="cards" class="mt-5 px-2 mx-4">
             <div class="card">
                 <img src="./assets/img/bebidas.jpg" alt="Gaseosas">
-                <h5>GASEOSAS</h5>
-                <p>
-                    Lorem ipsum,andae optio ea explicabo non voluptatum eaque.
-                </p>
+                <div class="card-body">
+                    <h5 class="fs-6">GASEOSAS</h5>
+                    <p class="fs-8">
+                        This is a wider card with supporting text below as a natural lead-in to additional content. This content is a littlebit longer.
+                    </p>
+                </div>
+                
             </div>
-            <div class="card">
+            <div class="card mt-4">
                 <img src="./assets/img/tablas.jpg" alt="Tablas">
-                <h5>TABLAS</h5>
-                <p>
-                    Lorem ipsum,andae optio ea explicabo non voluptatum eaque.
-                </p>
+                <div class="card-body">
+                    <h5 class="fs-6">TABLAS</h5>
+                    <p class="fs-8">
+                        This card has supporting text below as a natural lead-in to additional content.
+                    </p>
+                </div>
             </div>
-            <div class="card">
+            <div class="card mt-4">
                 <img src="./assets/img/shop.jpeg" alt="Cervezas">
-                <h5>SHOP CERVEZA</h5>
-                <p>
-                    Lorem ipsum,andae optio ea explicabo non voluptatum eaque.
-                </p>
+                <div class="card-body">
+                    <h5 class="fs-6">SHOP CERVEZA</h5>
+                    <p class="fs-8">
+                        This is a wider card with supporting text below as a natural lead-in to additional content. This content is a littlebit longer.
+                    </p>
+                </div>
             </div>
         </section>
 
-        <section id="forms">
+        <section id="forms" class="d-none">
             <div id="communicate">           
                 <form method="POST" action="redirect.html">
                     <h2>Comuniquemonos</h2>
@@ -146,10 +135,13 @@
         </section>        
     </main>
 
-    <footer>
-        <p>
+    <footer class="bg-dark d-flex justify-content-center align-items-center text-white">
+        <p class="fs-7">
             Todos los derechos reservados <span class="bi bi-r-circle"></span>
         </p> 
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
 </body>
 </html>

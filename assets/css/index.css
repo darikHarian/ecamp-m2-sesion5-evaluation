@@ -17,3 +17,23 @@ body {
     background: url("./../img/fondo.jpg");
     background-size: calc(23em);
 }
+
+.text-decoration-overline {
+    text-decoration: overline;
+}
+
+.fs-7 {
+    font-size: 11px;
+}
+
+.fs-8 {
+    font-size: 9px;
+}
+
+.card img {
+    height: 13.5em;
+}
+
+footer {
+    height: 5rem;
+}
