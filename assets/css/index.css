@@ -13,7 +13,7 @@ body {
     width: 2em;
 }
 
-.bg-glass {
+.header-bg-glass {
     background: url("./../img/fondo.jpg");
     background-size: calc(23em);
 }
@@ -36,4 +36,17 @@ body {
 
 footer {
     height: 5rem;
+}
+
+@media only screen and (min-width: 768px) { /* TABLET */
+
+    .card img {
+        height: 17em;
+    }
+
+    .footer-bg-glass {
+        background: url("./../img/fondo.jpg");
+        background-size: calc(70em);
+    }
+
 }
