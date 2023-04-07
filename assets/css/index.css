@@ -38,15 +38,70 @@ footer {
     height: 5rem;
 }
 
+.footer-bg-glass {
+    background: url("./../img/fondo.jpg");
+}
+
 @media only screen and (min-width: 768px) { /* TABLET */
 
     .card img {
         height: 17em;
     }
 
-    .footer-bg-glass {
-        background: url("./../img/fondo.jpg");
+    .footer-bg-glass {  
         background-size: calc(70em);
     }
 
+}
+
+@media only screen and (min-width: 992px) { /* DESKTOP */
+    form {
+        width: 75%;
+    }
+
+    footer {
+        height: 7rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) { /* EXTRA LARGE DESKTOP */
+    .header-bg-glass {
+        background-size: calc(19.1em);
+    }
+
+    .nav-link {
+        font-size: 10px;
+    }
+
+    .display-6 {
+        font-size: 25px !important;
+    }
+
+    h2 {
+        font-size: 18px !important;
+    }
+
+    h3 {
+        font-size: 20px !important;
+    }
+
+    .card img {
+        height: 12em;
+    }
+
+    form {
+        width: 40%;
+    }
+
+    label, input, button {
+        font-size: 12px !important;
+    }
+
+    footer {
+        height: 12rem;
+    }
+
+    .footer-bg-glass {  
+        background-size: calc(46em);
+    }
 }
